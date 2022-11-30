@@ -9,17 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Courgette&family=Delius&family=Itim&family=Joan&family=Niconne&family=Oswald:wght@500&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&family=Roboto+Mono:wght@500&family=Sono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
-    <nav>
+    <nav id="nav-bar">
         <input type="checkbox" id="nav-toggle">
         <img src="logo.svg" alt="logo" class="logo">
         <ul class="links">
             <li><a id="about" href="#">About Us</a></li>
             <li><a id="contact" href="#">Our Courses</a></li>
             <li><a id="work" href="#">Contact Us</a></li>
-            <li><a id="dashboard" href="#">Dashboard</a></li>
+            <li><a id="dashboard" href="#">Sign up</a></li>
         </ul>
         <label for="nav-toggle" class="icon-burger">
             <div class="line"></div>
@@ -53,14 +53,72 @@
         </p>
     </div>
     <div id="cont-5">
-        <h1>Testimonials</h1>
+        <h1 id="testi-h1">Testimonials</h1>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="man.svg" class="testi-pic" alt="man-pic">
+                    <h3>Muhammad Ali</h3>
+                    <p class="testi-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perspiciatis, earum corporis dolore possimus ipsum, et dignissimos reiciendis dolorum commodi aliquid. Accusantium provident deserunt libero, distinctio id aut neque mollitia.</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="man.svg" class="testi-pic" alt="man-pic">
+                    <h3>Hudhaifah Shah</h3>
+                    <p class="testi-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perspiciatis, earum corporis dolore possimus ipsum, et dignissimos reiciendis dolorum commodi aliquid. Accusantium provident deserunt libero, distinctio id aut neque mollitia.</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="man.svg" class="testi-pic" alt="man-pic">
+                    <h3>Anonymus</h3>
+                    <p class="testi-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perspiciatis, earum corporis dolore possimus ipsum, et dignissimos reiciendis dolorum commodi aliquid. Accusantium provident deserunt libero, distinctio id aut neque mollitia.</p>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </div>
+    <nav class="footer">
+        <div class="cont-6">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Al-Khaliq Academy</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our courses</a></li>
+                        <li><a href="#">contact us</a></li>
+                        <li><a href="#">Sign up / in</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>
 <style>
     body {
-        padding: 20px;
         margin: 0px;
         background-color: white;
         color: black;
@@ -73,7 +131,7 @@
     #container img {
         position: absolute;
         display: block;
-        width: 1000px;
+        max-width: 1000px;
         height: 1000px;
         margin-left: -100px;
         margin-top: -360px;
@@ -113,7 +171,7 @@
         text-decoration: none;
         color: black;
     }
-    nav {
+    #nav-bar {
         position: fixed;
         left: 0;
         right: 0;
@@ -124,7 +182,7 @@
         background-color: #50a2c8;
         text-align: right;
     }
-    nav .logo {
+    #nav-bar .logo {
         float: left;
         width: 100px;
         height: auto;
@@ -132,7 +190,7 @@
         align-items: center;
         margin-left: -100px;
     } 
-    nav .links {
+    #nav-bar .links {
         float: right;
         color: white;
         padding: 0;
@@ -144,10 +202,10 @@
         justify-content: space-around;
         align-items: center;
     }
-    nav .links li {
+    #nav-bar .links li {
         list-style: none;
     }
-    nav .links a {
+    #nav-bar .links a {
         display: block;
         padding: 1em;
         font-size: 20px;
@@ -159,14 +217,14 @@
         position: absolute;
         display: none;
     }
-    nav .icon-burger {
+    #nav-bar .icon-burger {
         position: absolute;
         right: 5%;
         top: 50%;
         transform: translateY(-50%);
         display: none;
     }
-    nav .icon-burger .line {
+    #nav-bar .icon-burger .line {
         width: 30px;
         height: 5px;
         background-color: white;
@@ -177,7 +235,7 @@
     #cont-3 {
         text-align: center;
         padding: 25px 25px;
-        width: 95vw;
+        max-width: 1300px;
     }
     #congrats {
         margin-top: 150px;
@@ -204,23 +262,171 @@
     ul {
         font-size: 17px;
     }
+    .swiper {
+        width: 600px;
+        height: 400px;
+        margin-bottom: 100px;
+    }
+    .swiper-slide {
+        text-align: center;
+    }
+    #cont-5 {
+        text-align: center;
+    }
+    #testi-h1 {
+        font-size: 40px;
+    }
+    .testi-pic {
+        width: 100px;
+        height: auto;
+        margin-top: 50px;
+    }
+    .testi-p {
+        max-width: 450px;
+        margin: auto;
+    }
+    .cont-6{
+        max-width: 1200px;
+        margin:auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul{
+        list-style: none;
+    }
+    .footer{
+        background-color: #001446;
+        padding: 70px 0;
+    }
+    .footer-col{
+        width: 25%;
+        padding: 0 15px;
+    }
+    .footer-col h4{
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+        color: #ffffff;
+        padding-left: 8px;
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin:0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+    .footer-col .social-links a:hover{
+        color: #24262b;
+        background-color: #ffffff;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    /*responsive*/
+    @media (max-width: 599px) {
+        .swiper {
+            width: 400px;
+            height: 450px;
+        }
+        .testi-p {
+            max-width: 300px;
+        }
+        #swiper-pagination {
+            margin-top: 20px;
+        }
+    }
+    /* @media (max-width: 318px) {
+        .swiper {
+            width: 280px;
+        }
+        .testi-p {
+            width: 180px;
+        }
+    } */
+    @media (max-width: 399px) {
+        #container img {
+            width: 330px;
+            top: 450px;
+            left: -20px;
+        }
+        .swiper {
+            width: 300px;
+        }
+        .testi-p {
+            width: 200px;
+        }
+        #congrats {
+            font-size: 38px;
+        }
+    }
+    @media (max-width: 469px) {
+        ul {
+            margin-left: -5px;
+        }
+        #bg-img {
+            width: 400px;
+            top: 450px;
+            left: -20px;
+        }
+        #h-1 {
+            font-size: 30px;
+        }
+    }
+    @media(max-width: 767px){
+        .footer-col{
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+    @media(max-width: 574px){
+        .footer-col{
+            width: 100%;
+        }
+    }
     @media (max-width: 462px) {
         #cont-3 {
             width: 100vw;
         }
     }
     @media (max-width: 404px) {
-        #cont-3 {
-            width: 110vw;
-        }
         #list-p, ul {
-            white-space: nowrap;
             margin-left: 10px;
-        }
-    }
-    @media (max-width: 340px) {
-        #cont-3 {
-            width: 130vw;
         }
     }
     @media (max-width: 1229px) {
@@ -247,7 +453,7 @@
     }
     @media (max-width: 1014px) {
         #container img {
-            width: 700px;
+            max-width: 700px;
             height: auto;
             margin-left: -80px;
             margin-top: 0px;
@@ -265,7 +471,7 @@
     }
     @media (max-width: 844px) {
         #container img {
-            width: 600px;
+            max-width: 600px;
             height: auto;
             margin-left: -80px;
             margin-top: 0px;
@@ -283,7 +489,7 @@
     }
     @media (max-width: 743px) {
         #container img {
-            width: 470px;
+            max-width: 470px;
             height: auto;
             margin-left: -80px;
             margin-top: -30px;
@@ -307,12 +513,10 @@
             margin-top: 400px;
             margin-left: 10px;
             font-size: 40px;
-            white-space: nowrap;
         }
         #h-2 {
             margin-top: -10px;
             font-size: 23px;
-            white-space: nowrap;
             margin-left: 5px;
         }
         .main-btn {
@@ -329,27 +533,27 @@
         }
     }
     @media (max-width: 1151px) {
-        nav .links {
+        #nav-bar .links {
             margin-right: 50px;
         }
     }
     @media (max-width: 1026px) {
-        nav .links {
+        #nav-bar .links {
             margin-right: 80px;
         }
     }
     @media (max-width: 888px) {
-        nav .links {
+        #nav-bar .links {
             margin-right: 100px;
         }
     }
     @media (max-width: 346px) {
-        nav .logo {
+        #nav-bar .logo {
             margin-left: 10px;
         }
     }
-    @media (max-width: 768px) {
-        nav .links {
+    @media (max-width: 836px) {
+        #nav-bar .links {
             float: none;
             position: fixed;
             z-index: 9;
@@ -366,26 +570,45 @@
             background-color: rgba(0, 0, 0, 0.8);
             transition: all 0.5s ease-in-out;
         }
-        nav .links a {
+        #nav-bar .links a {
             font-size: 20px;
         }
-        nav .icon-burger {
+        #nav-bar .icon-burger {
             display: block;
         }
-        nav :checked ~ .links {
+        #nav-bar :checked ~ .links {
             bottom: 0;
         }
-        nav :checked ~ .icon-burger .line:nth-child(1) {
+        #nav-bar :checked ~ .icon-burger .line:nth-child(1) {
             transform: translateY(10px) rotate(225deg);
         }
-        nav :checked ~ .icon-burger .line:nth-child(3) {
+        #nav-bar :checked ~ .icon-burger .line:nth-child(3) {
             transform: translateY(-10px) rotate(-225deg);
         }
-        nav :checked ~ .icon-burger .line:nth-child(2) {
+        #nav-bar :checked ~ .icon-burger .line:nth-child(2) {
             opacity: 0;
         }
-        nav .logo {
+        #nav-bar .logo {
             margin-left: -40px;
         }
     }
 </style>
+<script>
+    const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    // direction: 'vertical',
+    loop: true,
+    autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+    },
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },});
+</script>
