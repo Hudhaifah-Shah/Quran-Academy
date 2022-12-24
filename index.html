@@ -1,614 +1,765 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Courgette&family=Delius&family=Itim&family=Joan&family=Niconne&family=Oswald:wght@500&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&family=Roboto+Mono:wght@500&family=Sono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-<body>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
     <nav id="nav-bar">
-        <input type="checkbox" id="nav-toggle">
-        <img src="logo.svg" alt="logo" class="logo">
-        <ul class="links">
-            <li><a id="about" href="#">About Us</a></li>
-            <li><a id="contact" href="#">Our Courses</a></li>
-            <li><a id="work" href="#">Contact Us</a></li>
-            <li><a id="dashboard" href="#">Sign up</a></li>
-        </ul>
-        <label for="nav-toggle" class="icon-burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </label>
+      <input type="checkbox" id="nav-toggle">
+      <img src="logo.svg" alt="logo" class="logo">
+      <ul class="links">
+        <li>
+          <a id="about" href="index.html" class="nav-links">About Us</a>
+        </li>
+        <li>
+          <a id="courses" href="courses.html" class="nav-links">Our Courses</a>
+        </li>
+        <li>
+          <a id="contact" href="contact.html" class="nav-links">Contact Us</a>
+        </li>
+        <li>
+          <a id="dashboard" href="#" class="nav-links">Sign up</a>
+        </li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
     </nav>
     <div id="container">
-        <img src="bg-img.svg" alt="man reading quran" id="bg-img">
-        <h1 id="h-1">Online Quran Academy</h1>
-        <h2 id="h-2">We make learning Quran easy for everyone!</h2>
-        <div id="cont-2">
-            <button class="main-btn"><a href="#">Courses</a></button>
-            <button style="border-color:blue;" class="main-btn"><a href="#">Contact us</a></button>
-        </div>
+      <img src="bg-img.svg" alt="man reading quran" id="bg-img">
+      <h1 id="h-1">Online Quran Academy</h1>
+      <h2 id="h-2">We make learning Quran easy for everyone!</h2>
+      <div id="cont-2">
+        <button class="main-btn">
+          <a href="courses.html">Courses</a>
+        </button>
+        <button style="border-color:blue;" class="main-btn">
+          <a href="contact.html">Contact us</a>
+        </button>
+      </div>
     </div>
     <div id="cont-3">
-        <h1 id="congrats">Congratulations! You have came to the right place</h1>
-        <p id="intro">Our entire life is built around our faith. Islam has already set out the way we live our lives, but unfortunately, we are not aware of it. It is our duty to awaken from our dreams and discover the true beauty of Islam. The best way to start is by learning and teaching the Qur'an. Learning to recite the Qur'an is vital for us, as it will not only purify our souls, but also bring joy and peace to our lives. It's our job to connect with Islam, and the Al-Khaliq Academy is here to help you take on that responsibility. So what are you waiting for? Go ahead and sign up!</p>
+      <h1 id="congrats">Congratulations! You have came to the right place</h1>
+      <p id="intro">Our entire life is built around our faith. Islam has already set out the way we live our lives, but unfortunately, we are not aware of it. It is our duty to awaken from our dreams and discover the true beauty of Islam. The best way to start is by learning and teaching the Qur'an. Learning to recite the Qur'an is vital for us, as it will not only purify our souls, but also bring joy and peace to our lives. It's our job to connect with Islam, and the Al-Khaliq Academy is here to help you take on that responsibility. So what are you waiting for? Go ahead and sign up!</p>
     </div>
     <div id="cont-4">
-        <h1 id="begin">Begin this Holy journey!</h1>
-        <p id="list-p">To start, all you have to do is: <br>
+      <h1 id="begin">Begin this Holy journey!</h1>
+      <p id="list-p">To start, all you have to do is:
+        <br>
         <ul>
-            <li>Register Online</li>
-            <li>Select your course</li>
-            <li>Take a free trial class</li>
-            <li>If you'd like to continue, there will be no registration fee</li>
-            <li>And, most importantly, learn to recite the Holy Qur'an!</li>
+          <li>Register Online</li>
+          <li>Select your course</li>
+          <li>Take a free trial class</li>
+          <li>If you'd like to continue, there will be no registration fee</li>
+          <li>And, most importantly, learn to recite the Holy Qur'an!</li>
         </ul>
-        </p>
+      </p>
     </div>
     <div id="cont-5">
-        <h1 id="testi-h1">Testimonials</h1>
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-            <!-- Slides -->
-                <div class="swiper-slide">
-                    <img src="man.svg" class="testi-pic" alt="man-pic">
-                    <h3>Muhammad Ali</h3>
-                    <p class="testi-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perspiciatis, earum corporis dolore possimus ipsum, et dignissimos reiciendis dolorum commodi aliquid. Accusantium provident deserunt libero, distinctio id aut neque mollitia.</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="man.svg" class="testi-pic" alt="man-pic">
-                    <h3>Hudhaifah Shah</h3>
-                    <p class="testi-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perspiciatis, earum corporis dolore possimus ipsum, et dignissimos reiciendis dolorum commodi aliquid. Accusantium provident deserunt libero, distinctio id aut neque mollitia.</p>
-                </div>
-                <div class="swiper-slide">
-                    <img src="man.svg" class="testi-pic" alt="man-pic">
-                    <h3>Anonymus</h3>
-                    <p class="testi-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perspiciatis, earum corporis dolore possimus ipsum, et dignissimos reiciendis dolorum commodi aliquid. Accusantium provident deserunt libero, distinctio id aut neque mollitia.</p>
-                </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-        
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+      <h1 id="testi-h1">Testimonials</h1>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="man.svg" class="testi-pic" alt="man-pic">
+            <h3>Muhammad Waqaas</h3>
+            <p class="testi-p">The online system is very satisfying and and the teachers also take their responsibility seriously.</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="man.svg" class="testi-pic" alt="man-pic">
+            <h3>Muhammad Ali</h3>
+            <p class="testi-p">The teachers are very friendly and motivating. My kids are looking looking FORWARD to Quran lessons!</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="man.svg" class="testi-pic" alt="man-pic">
+            <h3>Abdullah Abbassi</h3>
+            <p class="testi-p">I have been a very depressed man my entire life, but ever since my friends told me about al-Khaliq academy, I have never been so happy.</p>
+          </div>
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </div>
     <nav class="footer">
-        <div class="cont-6">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Al-Khaliq Academy</h4>
-                    <ul>
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">our courses</a></li>
-                        <li><a href="#">contact us</a></li>
-                        <li><a href="#">Sign up / in</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>get help</h4>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms and Conditions</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
+      <div class="cont-6">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Al-Khaliq Academy</h4>
+            <ul>
+              <li>
+                <a href="#">about us</a>
+              </li>
+              <li>
+                <a href="#">our courses</a>
+              </li>
+              <li>
+                <a href="#">contact us</a>
+              </li>
+              <li>
+                <a href="#">Sign up / in</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li>
+                <a id="privacy" href="privacy.html">Privacy Policy</a>
+              </li>
+              <li>
+                <a id="terms" href="terms.html">Terms and Conditions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </nav>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-</body>
+  </body>
+
 </html>
 <style>
-    body {
-        margin: 0px;
-        background-color: white;
-        color: black;
-    }
-    input {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-    }
-    #container img {
-        position: absolute;
-        display: block;
-        max-width: 1000px;
-        height: 1000px;
-        margin-left: -100px;
-        margin-top: -360px;
-    }
-    #h-1 {
-        margin-top: 270px;
-        margin-left: 800px;
-        color: rgb(11, 35, 255);
-        font-size: 50px;
-        margin-right: 5px;
-    }
-    #h-2 {
-        margin-left: 800px;
-        color: rgb(2, 2, 2);
-        font-size: 35px;
-        margin-right: 5px;
-    }
-    #cont-2 {
-        width: 100%;
-        height: 100%;
-    }
-    .main-btn {
-        /* position */
-        margin-left: 850px;
-        margin-bottom: 2px;
-        margin-top: 5px;
-        /* styling */
-        width: 200px;
-        height: 60px;
-        border-radius: 50px;
-        font-size: 20px;
-        background-color: white;
-        border-color: rgb(255, 208, 0);
-        border-width: 5px;
-    }
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    #nav-bar {
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        z-index: 10;
-        height: 100px;
-        padding: 0 15%;
-        background-color: #50a2c8;
-        text-align: right;
-    }
-    #nav-bar .logo {
-        float: left;
-        width: 100px;
-        height: auto;
-        display: flex;
-        align-items: center;
-        margin-left: -100px;
-    } 
-    #nav-bar .links {
-        float: right;
-        color: white;
-        padding: 0;
-        margin: 0;
-        margin-right: 20px;
-        width: 20%;
-        height: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    #nav-bar .links li {
-        list-style: none;
-    }
-    #nav-bar .links a {
-        display: block;
-        padding: 1em;
-        font-size: 20px;
-        color: white;
-        font-weight: bold;
-        white-space: nowrap;
-    }
-    #nav-toggle {
-        position: absolute;
-        display: none;
-    }
-    #nav-bar .icon-burger {
-        position: absolute;
-        right: 5%;
-        top: 50%;
-        transform: translateY(-50%);
-        display: none;
-    }
-    #nav-bar .icon-burger .line {
-        width: 30px;
-        height: 5px;
-        background-color: white;
-        margin: 5px;
-        border-radius: 3px;
-        transition: all 0.3s ease-in-out;
-    }
-    #cont-3 {
-        text-align: center;
-        padding: 25px 25px;
-        max-width: 1300px;
-    }
-    #congrats {
-        margin-top: 150px;
-        font-family: 'Oswald', sans-serif;
-        font-size: 46px;
-    }
-    #intro {
-        font-size: 22px;
-        line-height: 32px;
-        font-family: sans-serif;
-    }
-    #begin {
-        font-family: 'Oswald', sans-serif;
-        font-size: 46px;
-        color: darkcyan;
-        margin-left: 20px;
-    }
-    #list-p, ul {
-        font-size: 25px;
-        line-height: 32px;
-        font-family: sans-serif;
-        margin-left: 40px;
-    }
-    ul {
-        font-size: 17px;
-    }
+  body {
+    margin: 0;
+    background-color: white;
+    color: black;
+  }
+
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  #container img {
+    position: absolute;
+    display: block;
+    max-width: 1000px;
+    height: 1000px;
+    margin-left: -100px;
+    margin-top: -360px;
+  }
+
+  #h-1 {
+    margin-top: 270px;
+    margin-left: 800px;
+    color: rgb(11, 35, 255);
+    font-size: 50px;
+    margin-right: 5px;
+  }
+
+  #h-2 {
+    margin-left: 800px;
+    color: rgb(2, 2, 2);
+    font-size: 35px;
+    margin-right: 5px;
+  }
+
+  #cont-2 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-btn {
+    /* position */
+    margin-left: 850px;
+    margin-bottom: 2px;
+    margin-top: 5px;
+    /* styling */
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 20px;
+    background-color: white;
+    border-color: rgb(255, 208, 0);
+    border-width: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #nav-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    height: 100px;
+    padding: 0 15%;
+    background-color: #50a2c8;
+    text-align: right;
+  }
+
+  #nav-bar .logo {
+    float: left;
+    width: 100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-left: -100px;
+  }
+
+  #nav-bar .links {
+    float: right;
+    color: white;
+    padding: 0;
+    margin: 0 20px 0 0;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #nav-bar .links li {
+    list-style: none;
+  }
+
+  #nav-bar .links a {
+    display: block;
+    padding: 1em;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  #about {
+    text-shadow:
+      0 0 7px #3459ff,
+      0 0 10px #002efa,
+      0 0 21px #002efa,
+      0 0 42px #0028db,
+      0 0 82px #0028db,
+      0 0 92px #0028db,
+      0 0 102px #0028db,
+      0 0 112px #001fa8,
+      0 0 122px #001fa8,
+      0 0 132px #001fa8,
+      0 0 142px #001fa8,
+      0 0 152px #001fa8;
+  }
+
+  #nav-bar .links a:hover {
+    text-shadow:
+      0 0 7px #3459ff,
+      0 0 10px #002efa,
+      0 0 21px #002efa,
+      0 0 42px #0028db,
+      0 0 82px #0028db,
+      0 0 92px #0028db,
+      0 0 102px #0028db,
+      0 0 112px #001fa8,
+      0 0 122px #001fa8,
+      0 0 132px #001fa8,
+      0 0 142px #001fa8,
+      0 0 152px #001fa8;
+  }
+
+  #nav-toggle {
+    position: absolute;
+    display: none;
+  }
+
+  #nav-bar .icon-burger {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+  }
+
+  #nav-bar .icon-burger .line {
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #cont-3 {
+    text-align: center;
+    padding: 25px;
+    max-width: 1300px;
+  }
+
+  #congrats {
+    margin-top: 150px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 46px;
+  }
+
+  #intro {
+    font-size: 22px;
+    line-height: 32px;
+    font-family: sans-serif;
+  }
+
+  #begin {
+    font-family: 'Oswald', sans-serif;
+    font-size: 46px;
+    color: darkcyan;
+    margin-left: 20px;
+  }
+
+  #list-p,
+  ul {
+    font-size: 25px;
+    line-height: 32px;
+    font-family: sans-serif;
+    margin-left: 40px;
+  }
+
+  ul {
+    font-size: 17px;
+  }
+
+  .swiper {
+    width: 600px;
+    height: 400px;
+    margin-bottom: 100px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+  }
+
+  #cont-5 {
+    text-align: center;
+  }
+
+  #testi-h1 {
+    font-size: 40px;
+  }
+
+  .testi-pic {
+    width: 100px;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .testi-p {
+    max-width: 450px;
+    margin: auto;
+  }
+
+  .cont-6 {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .footer {
+    background-color: #001446;
+    padding: 70px 0;
+  }
+
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+  }
+
+  .footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  .footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+  }
+
+  .footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+
+  .footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /*responsive*/
+  @media (max-width: 599px) {
     .swiper {
-        width: 600px;
-        height: 400px;
-        margin-bottom: 100px;
+      width: 400px;
+      height: 450px;
     }
-    .swiper-slide {
-        text-align: center;
-    }
-    #cont-5 {
-        text-align: center;
-    }
-    #testi-h1 {
-        font-size: 40px;
-    }
-    .testi-pic {
-        width: 100px;
-        height: auto;
-        margin-top: 50px;
-    }
+
     .testi-p {
-        max-width: 450px;
-        margin: auto;
+      max-width: 300px;
     }
-    .cont-6{
-        max-width: 1200px;
-        margin:auto;
+
+    #swiper-pagination {
+      margin-top: 20px;
     }
-    .row{
-        display: flex;
-        flex-wrap: wrap;
+  }
+
+  @media (max-width: 399px) {
+    #container img {
+      width: 330px;
+      top: 450px;
+      left: -20px;
     }
-    ul{
-        list-style: none;
+
+    .swiper {
+      width: 300px;
     }
-    .footer{
-        background-color: #001446;
-        padding: 70px 0;
+
+    .testi-p {
+      width: 200px;
     }
-    .footer-col{
-        width: 25%;
-        padding: 0 15px;
+
+    #congrats {
+      font-size: 38px;
     }
-    .footer-col h4{
-        font-size: 18px;
-        color: #ffffff;
-        text-transform: capitalize;
-        margin-bottom: 35px;
-        font-weight: 500;
-        position: relative;
+  }
+
+  @media (max-width: 469px) {
+    ul {
+      margin-left: -5px;
     }
-    .footer-col h4::before{
-        content: '';
-        position: absolute;
-        left:0;
-        bottom: -10px;
-        background-color: #e91e63;
-        height: 2px;
-        box-sizing: border-box;
-        width: 50px;
+
+    #bg-img {
+      width: 400px;
+      top: 450px;
+      left: -20px;
     }
-    .footer-col ul li:not(:last-child){
-        margin-bottom: 10px;
+
+    #h-1 {
+      font-size: 30px;
     }
-    .footer-col ul li a{
-        font-size: 16px;
-        text-transform: capitalize;
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: 300;
-        color: #bbbbbb;
-        display: block;
-        transition: all 0.3s ease;
+  }
+
+  @media(max-width: 767px) {
+    .footer-col {
+      width: 50%;
+      margin-bottom: 30px;
     }
-    .footer-col ul li a:hover{
-        color: #ffffff;
-        padding-left: 8px;
+  }
+
+  @media(max-width: 574px) {
+    .footer-col {
+      width: 100%;
     }
-    .footer-col .social-links a{
-        display: inline-block;
-        height: 40px;
-        width: 40px;
-        background-color: rgba(255,255,255,0.2);
-        margin:0 10px 10px 0;
-        text-align: center;
-        line-height: 40px;
-        border-radius: 50%;
-        color: #ffffff;
-        transition: all 0.5s ease;
+  }
+
+  @media (max-width: 462px) {
+    #cont-3 {
+      width: 100vw;
     }
-    .footer-col .social-links a:hover{
-        color: #24262b;
-        background-color: #ffffff;
+  }
+
+  @media (max-width: 404px) {
+
+    #list-p,
+    ul {
+      margin-left: 10px;
     }
-    *{
-        box-sizing: border-box;
+  }
+
+  @media (max-width: 1229px) {
+    #h-1 {
+      margin-top: 230px;
     }
-    /*responsive*/
-    @media (max-width: 599px) {
-        .swiper {
-            width: 400px;
-            height: 450px;
-        }
-        .testi-p {
-            max-width: 300px;
-        }
-        #swiper-pagination {
-            margin-top: 20px;
-        }
+
+    #container img {
+      margin-top: -300px;
     }
-    /* @media (max-width: 318px) {
-        .swiper {
-            width: 280px;
-        }
-        .testi-p {
-            width: 180px;
-        }
-    } */
-    @media (max-width: 399px) {
-        #container img {
-            width: 330px;
-            top: 450px;
-            left: -20px;
-        }
-        .swiper {
-            width: 300px;
-        }
-        .testi-p {
-            width: 200px;
-        }
-        #congrats {
-            font-size: 38px;
-        }
+  }
+
+  @media (max-width: 1089px) {
+    #container img {
+      margin-left: -140px;
     }
-    @media (max-width: 469px) {
-        ul {
-            margin-left: -5px;
-        }
-        #bg-img {
-            width: 400px;
-            top: 450px;
-            left: -20px;
-        }
-        #h-1 {
-            font-size: 30px;
-        }
+
+    #h-1 {
+      margin-left: 750px;
     }
-    @media(max-width: 767px){
-        .footer-col{
-            width: 50%;
-            margin-bottom: 30px;
-        }
+
+    #h-2 {
+      margin-left: 750px;
     }
-    @media(max-width: 574px){
-        .footer-col{
-            width: 100%;
-        }
+
+    .main-btn {
+      margin-left: 780px;
     }
-    @media (max-width: 462px) {
-        #cont-3 {
-            width: 100vw;
-        }
+  }
+
+  @media (max-width: 1014px) {
+    #container img {
+      max-width: 700px;
+      height: auto;
+      margin-left: -80px;
+      margin-top: 0;
     }
-    @media (max-width: 404px) {
-        #list-p, ul {
-            margin-left: 10px;
-        }
+
+    #h-1 {
+      margin-left: 570px;
+      margin-top: 130px;
     }
-    @media (max-width: 1229px) {
-        #h-1 {
-            margin-top: 230px;
-        }
-        #container img {
-            margin-top: -300px;
-        }
+
+    #h-2 {
+      margin-left: 570px;
     }
-    @media (max-width: 1089px) {
-        #container img {
-            margin-left: -140px;
-        }
-        #h-1 {
-            margin-left: 750px;
-        }
-        #h-2 {
-            margin-left: 750px;
-        }
-        .main-btn {
-            margin-left: 780px;
-        }
+
+    .main-btn {
+      margin-left: 610px;
     }
-    @media (max-width: 1014px) {
-        #container img {
-            max-width: 700px;
-            height: auto;
-            margin-left: -80px;
-            margin-top: 0px;
-        } 
-        #h-1 {
-            margin-left: 570px;
-            margin-top: 130px;
-        }
-        #h-2 {
-            margin-left: 570px;
-        }
-        .main-btn {
-            margin-left: 610px;
-        }
+  }
+
+  @media (max-width: 844px) {
+    #container img {
+      max-width: 600px;
+      height: auto;
+      margin-left: -80px;
+      margin-top: 0;
     }
-    @media (max-width: 844px) {
-        #container img {
-            max-width: 600px;
-            height: auto;
-            margin-left: -80px;
-            margin-top: 0px;
-        } 
-        #h-1 {
-            margin-left: 470px;
-            margin-top: 130px;
-        }
-        #h-2 {
-            margin-left: 470px;
-        }
-        .main-btn {
-            margin-left: 510px;
-        }
+
+    #h-1 {
+      margin-left: 470px;
+      margin-top: 130px;
     }
-    @media (max-width: 743px) {
-        #container img {
-            max-width: 470px;
-            height: auto;
-            margin-left: -80px;
-            margin-top: -30px;
-        } 
-        #h-1 {
-            margin-left: 350px;
-            margin-top: 130px;
-        }
-        #h-2 {
-            margin-top: 150px;
-            margin-left: 20px;
-            width: auto;
-        }
-        .main-btn {
-            margin: auto;
-            margin-left: 10px;
-        }
+
+    #h-2 {
+      margin-left: 470px;
     }
-    @media (max-width: 585px) {
-        #h-1 {
-            margin-top: 400px;
-            margin-left: 10px;
-            font-size: 40px;
-        }
-        #h-2 {
-            margin-top: -10px;
-            font-size: 23px;
-            margin-left: 5px;
-        }
-        .main-btn {
-            margin-top: 20px;
-            margin-left: 20px;
-        }
-        #cont-2 {
-            display: inline-flex;
-            width: 97vw;
-        }
-        #container img {
-            margin: auto;
-            margin-top: -300px;
-        }
+
+    .main-btn {
+      margin-left: 510px;
     }
-    @media (max-width: 1151px) {
-        #nav-bar .links {
-            margin-right: 50px;
-        }
+  }
+
+  @media (max-width: 743px) {
+    #container img {
+      max-width: 470px;
+      height: auto;
+      margin-left: -80px;
+      margin-top: -30px;
     }
-    @media (max-width: 1026px) {
-        #nav-bar .links {
-            margin-right: 80px;
-        }
+
+    #h-1 {
+      margin-left: 350px;
+      margin-top: 130px;
     }
-    @media (max-width: 888px) {
-        #nav-bar .links {
-            margin-right: 100px;
-        }
+
+    #h-2 {
+      margin-top: 150px;
+      margin-left: 20px;
+      width: auto;
     }
-    @media (max-width: 346px) {
-        #nav-bar .logo {
-            margin-left: 10px;
-        }
+
+    .main-btn {
+      margin: auto auto auto 10px;
     }
-    @media (max-width: 836px) {
-        #nav-bar .links {
-            float: none;
-            position: fixed;
-            z-index: 9;
-            left: 0;
-            top: 100px;
-            right: 0;
-            bottom: 100%;
-            margin-right: 0px;
-            overflow: hidden;
-            flex-direction: column;
-            justify-content: space-evenly;
-            width: auto;
-            height: auto;
-            background-color: rgba(0, 0, 0, 0.8);
-            transition: all 0.5s ease-in-out;
-        }
-        #nav-bar .links a {
-            font-size: 20px;
-        }
-        #nav-bar .icon-burger {
-            display: block;
-        }
-        #nav-bar :checked ~ .links {
-            bottom: 0;
-        }
-        #nav-bar :checked ~ .icon-burger .line:nth-child(1) {
-            transform: translateY(10px) rotate(225deg);
-        }
-        #nav-bar :checked ~ .icon-burger .line:nth-child(3) {
-            transform: translateY(-10px) rotate(-225deg);
-        }
-        #nav-bar :checked ~ .icon-burger .line:nth-child(2) {
-            opacity: 0;
-        }
-        #nav-bar .logo {
-            margin-left: -40px;
-        }
+  }
+
+  @media (max-width: 585px) {
+    #h-1 {
+      margin-top: 400px;
+      margin-left: 10px;
+      font-size: 40px;
     }
+
+    #h-2 {
+      margin-top: -10px;
+      font-size: 23px;
+      margin-left: 5px;
+    }
+
+    .main-btn {
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    #cont-2 {
+      display: inline-flex;
+      width: 97vw;
+    }
+
+    #container img {
+      margin: -300px auto auto;
+    }
+  }
+
+  @media (max-width: 1151px) {
+    #nav-bar .links {
+      margin-right: 50px;
+    }
+  }
+
+  @media (max-width: 1026px) {
+    #nav-bar .links {
+      margin-right: 80px;
+    }
+  }
+
+  @media (max-width: 888px) {
+    #nav-bar .links {
+      margin-right: 100px;
+    }
+  }
+
+  @media (max-width: 346px) {
+    #nav-bar .logo {
+      margin-left: 10px;
+    }
+  }
+
+  @media (max-width: 836px) {
+    #nav-bar .links {
+      float: none;
+      position: fixed;
+      z-index: 9;
+      left: 0;
+      top: 100px;
+      right: 0;
+      bottom: 100%;
+      margin-right: 0;
+      overflow: hidden;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: auto;
+      height: auto;
+      background-color: rgba(0, 0, 0, 0.8);
+      transition: all 0.5s ease-in-out;
+    }
+
+    #nav-bar .links a {
+      font-size: 20px;
+    }
+
+    #nav-bar .icon-burger {
+      display: block;
+    }
+
+    #nav-bar :checked~.links {
+      bottom: 0;
+    }
+
+    #nav-bar :checked~.icon-burger .line:nth-child(1) {
+      transform: translateY(10px) rotate(225deg);
+    }
+
+    #nav-bar :checked~.icon-burger .line:nth-child(3) {
+      transform: translateY(-10px) rotate(-225deg);
+    }
+
+    #nav-bar :checked~.icon-burger .line:nth-child(2) {
+      opacity: 0;
+    }
+
+    #nav-bar .logo {
+      margin-left: -40px;
+    }
+  }
 </style>
 <script>
-    const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.swiper', {
     // Optional parameters
     // direction: 'vertical',
     loop: true,
     autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
+      delay: 2500,
+      disableOnInteraction: false
     },
     // If we need pagination
     pagination: {
-        el: '.swiper-pagination',
+      el: '.swiper-pagination'
     },
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },});
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+  })
 </script>
