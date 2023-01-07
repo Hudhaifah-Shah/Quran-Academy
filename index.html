@@ -26,10 +26,10 @@
           <a id="courses" href="courses.html" class="nav-links">Our Courses</a>
         </li>
         <li>
-          <a id="contact" href="contact.html" class="nav-links">Contact Us</a>
+          <a id="contact" href="#footer" class="nav-links">Contact Us</a>
         </li>
         <li>
-          <a id="dashboard" href="#" class="nav-links">Sign up</a>
+          <a id="dashboard" href="register.html" class="nav-links">Sign up</a>
         </li>
       </ul>
       <label for="nav-toggle" class="icon-burger">
@@ -47,7 +47,7 @@
           <a href="courses.html">Courses</a>
         </button>
         <button style="border-color:blue;" class="main-btn">
-          <a href="contact.html">Contact us</a>
+          <a href="#footer">Contact us</a>
         </button>
       </div>
     </div>
@@ -99,20 +99,20 @@
         <div class="swiper-button-next"></div>
       </div>
     </div>
-    <nav class="footer">
+    <nav class="footer" id="footer">
       <div class="cont-6">
         <div class="row">
           <div class="footer-col">
             <h4>Al-Khaliq Academy</h4>
             <ul>
               <li>
-                <a href="#">about us</a>
+                <a href="index.html">about us</a>
               </li>
               <li>
-                <a href="#">our courses</a>
+                  <a href="courses.html">our courses</a>
               </li>
               <li>
-                <a href="#">Sign up / in</a>
+                <a href="register.html">Sign up / in</a>
               </li>
             </ul>
           </div>
@@ -157,6 +157,11 @@
 
 </html>
 <style>
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
   #container img {
     position: absolute;
     display: block;
@@ -224,6 +229,10 @@
     font-size: 46px;
     color: darkcyan;
     margin-left: 20px;
+  }
+
+  ul {
+  list-style: none;
   }
 
   .swiper {

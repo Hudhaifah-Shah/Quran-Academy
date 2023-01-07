@@ -117,10 +117,6 @@ ul {
   flex-wrap: wrap;
 }
 
-ul {
-  list-style: none;
-}
-
 .footer {
   background-color: #001446;
   padding: 70px 0;

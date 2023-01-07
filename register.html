@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Courgette&family=Delius&family=Itim&family=Joan&family=Niconne&family=Oswald:wght@500&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&family=Roboto+Mono:wght@500&family=Sono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/542da283cf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="nav-bar">
+        <input type="checkbox" id="nav-toggle">
+        <img src="logo.svg" alt="logo" class="logo">
+        <ul class="links">
+          <li>
+            <a id="about" href="index.html" class="nav-links">About Us</a>
+          </li>
+          <li>
+            <a id="courses" href="courses.html" class="nav-links">Our Courses</a>
+          </li>
+          <li>
+            <a id="contact" href="#footer" class="nav-links">Contact Us</a>
+          </li>
+          <li>
+            <a id="dashboard" href="register.html" class="nav-links">Sign up</a>
+          </li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+    </nav>
+    <div id="main-text">
+        <div style="text-align: center;">
+            <h1>Register</h1>
+        </div>
+        <form id="login-form" action="https://formsubmit.co/info.alkhaliqacademy@gmail.com" method="POST">
+            <input type="text" placeholder="Name" autocomplete="off" id="name" name="name" required class="field">
+            <!-- <select id="gender" name="gender" required class="field">
+                <option disabled selected value class="option">Gender</option>
+                <option value="Male" class="option">Male</option>
+                <option value="Female" class="option">Female</option>
+            </select> -->
+            <input type="email" placeholder="Email" autocomplete="off" id="email" name="email" class="field" required>
+            <input type="number" placeholder="Whatsapp no. +" autocomplete="off" id="number" name="number" class="field" required>
+            <!-- <p class="label">Course(s)</p>
+            <div id="checkbox">
+                <label for="nq" class="check">
+                    <input type="checkbox" id="nq" name="nq" value="Noorani Qaida" class="checkboxes">
+                    <span>Noorani Qaida</span>
+                </label>
+                <label for="mq" class="check">
+                    <input type="checkbox" id="mq" name="mq" value="Maarif Qaida" class="checkboxes">
+                    <span>Maarif Qaida</span>
+                </label>
+                <label for="nazra" class="check">
+                    <input type="checkbox" id="nazra" name="nazra" value="Quran Nazra" class="checkboxes">
+                    <span>Quran Nazra</span>
+                </label>
+                <label for="hifz" class="check">
+                    <input type="checkbox" id="hifz" name="hifz" value="Quran Hifz" class="checkboxes">
+                    <span>Quran Hifz</span>
+                </label>
+                <label for="mp" class="check">
+                    <input type="checkbox" id="mp" name="mp" value="Masnoon prayers" class="checkboxes">
+                    <span>Masnoon prayers (Salah, Funerel prayer)</span>
+                </label>
+                <label for="hadith" class="check">
+                    <input type="checkbox" id="hadith" name="hadith" value="Ahadith learning" class="checkboxes">
+                    <span>Ahadith learning</span>
+                </label>
+            </div> -->
+            <button type="submit" id="submit-btn">Register</button>
+        </form>
+    </div>
+    <nav class="footer" id="footer">
+        <div class="cont-6">
+            <div class="row">
+            <div class="footer-col">
+                <h4>Al-Khaliq Academy</h4>
+                <ul style="list-style: none;">
+                <li>
+                    <a href="index.html">about us</a>
+                </li>
+                <li>
+                    <a href="courses.html">our courses</a>
+                </li>
+                <li>
+                    <a href="register.html">Sign up / in</a>
+                </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul style="list-style: none;">
+                <li>
+                    <a id="privacy" href="privacy.html">Privacy Policy</a>
+                </li>
+                <li>
+                    <a id="terms" href="terms.html">Terms and Conditions</a>
+                </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="#" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/al-khaliq-academy/" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:info.alkhaliqacademy@gmail.com?subject=Al-Khaliq Academy Contact Form">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/923016501668" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+            </div>
+            <hr>
+            <p id="copyright">Al-Khaliq Academy © 2023 Copyrights. All Rights Reserved</p>
+        </div>
+    </nav>
+    <script src="register.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
+<style>
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+    h1 {
+        margin-top: 220px;
+        font-size: 45px;
+        font-family: sans-serif;
+        margin-bottom: 50px;
+    }
+    *:focus {
+        outline: none;
+    }
+    #login-form {
+        width: 90vw;
+        margin: auto;
+        margin-bottom: 100px;
+        height: 1400px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        text-transform: capitalize;
+    }
+    #checkbox {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 30px;
+        font-size: 20px;
+        opacity: 0;
+    }
+    .check {
+        margin-left: 10px;
+        height: 90px;
+        width: 500px;
+        text-align: center;
+        box-shadow: 0px 8px 24px -8px rgba(0, 0, 0, 0.9);
+        text-align: center;
+        padding-top: 30px;
+        cursor: pointer;
+        border: 5px solid #50a2c8;
+        border-radius: 10px;
+        margin-top: 20px;
+        font-family: sans-serif;
+    }
+    input[type=checkbox]:checked + span {
+        color: #50a2c8;
+        font-size: 23px;
+    }
+    .label {
+        margin: 15px;
+        font-size: 23px;
+        font-family: sans-serif;
+        opacity: 0;
+    }
+    .field {
+        height: 90px;
+        width: 500px;
+        margin: auto;
+        border-radius: 10px;
+        border-color: #50a2c8;
+        border-style: solid;
+        border-width: 5px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        color: rgb(100, 100, 100);
+        font-size: 18px;
+        opacity: 0;
+    }
+    #submit-btn {
+        width: 500px;
+        height: 90px;
+        margin: auto;
+        margin-top: 70px;
+        border-radius: 15px;
+        border-color: #50a2c8;
+        background-color: white;
+        border-width: 5px;
+        border-style: solid;
+        opacity: 0;
+        color: #50a2c8;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+    
+</style>
