@@ -40,13 +40,14 @@
             <h1>Register</h1>
         </div>
         <form id="login-form" action="https://formsubmit.co/info.alkhaliqacademy@gmail.com" method="POST">
+            <input type="hidden" name="_template" value="table">
             <input type="text" placeholder="Name" autocomplete="off" id="name" name="name" required class="field">
             <select id="gender" name="gender" required class="field">
                 <option disabled selected value class="option">Gender</option>
                 <option value="Male" class="option">Male</option>
                 <option value="Female" class="option">Female</option>
             </select>
-            <input type="hidden" name="_autoresponse" value="your custom message">
+            <input type="hidden" name="_autoresponse" value="Thank You for registering at Al-Khaliq academy. We will reach out to you on WhatApp as soon as possible.">
             <input type="email" placeholder="Email" autocomplete="off" id="email" name="email" class="field" required>
             <input type="number" placeholder="Whatsapp no. +" autocomplete="off" id="number" name="number" class="field" required>
             <p class="label">Course(s)</p>
