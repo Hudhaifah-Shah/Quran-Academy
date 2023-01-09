@@ -1,0 +1,19 @@
+{
+  "name": "quran-academy",
+  "version": "1.0.0",
+  "description": "Online Institute",
+  "main": "register.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hudhaifah-Shah/Quran-Academy.git"
+  },
+  "author": "Hudhaifah Shah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hudhaifah-Shah/Quran-Academy/issues"
+  },
+  "homepage": "https://github.com/Hudhaifah-Shah/Quran-Academy#readme"
+}
