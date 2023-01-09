@@ -71,7 +71,7 @@
                 </label>
                 <label for="mp" class="check">
                     <input type="checkbox" id="mp" name="Course" value="Masnoon prayers" class="checkboxes">
-                    <span>Masnoon prayers (Salah, Funerel prayer)</span>
+                    <span id="masnoon">Masnoon prayers (Salah, Funerel prayer)</span>
                 </label>
                 <label for="hadith" class="check">
                     <input type="checkbox" id="hadith" name="Course" value="Ahadith learning" class="checkboxes">
@@ -150,7 +150,7 @@
         outline: none;
     }
     #login-form {
-        width: 90vw;
+        width: 100vw;
         margin: auto;
         margin-bottom: 100px;
         height: 1400px;
@@ -220,5 +220,41 @@
         font-weight: bolder;
         font-size: 30px;
     }
-    
+    @media (max-width: 598px) {
+        .field {
+            width: 400px;
+        }
+        .check {
+            width: 400px;
+        }
+        #submit-btn {
+            width: 400px;
+        }
+    }
+    @media (max-width: 458px) {
+        .field {
+            width: 300px;
+        }
+        .check {
+            width: 300px;
+        }
+        #submit-btn {
+            width: 300px;
+        }
+    }
+    @media (max-width: 355px) {
+        .field {
+            width: 250px;
+        }
+        .check {
+            width: 250px;
+            margin-left: -10px;
+        }
+        #submit-btn {
+            width: 250px;
+        }
+        #masnoon {
+            font-size: 15px;
+        }
+    }
 </style>
